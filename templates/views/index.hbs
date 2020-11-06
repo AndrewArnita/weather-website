@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>{{smalltitle}}</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css"> 
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p id="p1">Use this website to see the weather today!</p>   
+        <img class="portrait" src="/img/earth.jpg" alt="earth">
+
+        <br>
+        <br>
+        <br>
+        <form>
+            <input style="font-size: 20px; text-transform: capitalize;" placeholder="Location..." type="text" size="20px">
+            <button style="font-size: 20px;">Search</button>
+        </form>
+
+        <p id="p2"></p>
+        <p id="p3"></p>
+    </div>
+
+
+    {{>footer}}
+
+    
+    {{!-- print in the console of a website using Ctrl+Shift+J --}}
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
