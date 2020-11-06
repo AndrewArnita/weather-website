@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
     res.render("index",{
         smalltitle: "Weather",
         title: "Weather App",
-        name: "Andrew",
+        name: "Andrew Arnita",
         age: 21,
     }) //render our views .hbs files
 })
@@ -36,7 +36,7 @@ app.get("/about", (req, res) => {
     res.render("about",{
         smalltitle: "About",
         title: "About",
-        name: "Andrew",
+        name: "Andrew Arnita",
         parag: "Yes this me there, what's up?"
     }) 
 })
@@ -46,7 +46,7 @@ app.get("/help", (req, res) => {
     res.render("help",{
         smalltitle: "Help",
         title: "Help!",
-        name: "Andrew",
+        name: "Andrew Arnita",
         parag: "Yo, if you need any help just call me bro!"
     })
 })
