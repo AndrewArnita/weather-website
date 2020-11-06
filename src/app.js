@@ -37,7 +37,7 @@ app.get("/about", (req, res) => {
         smalltitle: "About",
         title: "About",
         name: "Andrew Arnita",
-        parag: "Yes this me there, what's up?"
+        parag: "Yes this is Andrew there, what's up?"
     }) 
 })
 
@@ -47,7 +47,7 @@ app.get("/help", (req, res) => {
         smalltitle: "Help",
         title: "Help!",
         name: "Andrew Arnita",
-        parag: "Yo, if you need any help just call me bro!"
+        parag: "Yo, are you stuck? How can I help you?"
     })
 })
 
