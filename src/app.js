@@ -5,6 +5,8 @@ const requestWeather = require("./utils/request-weather.js")
 
 //express documentation at expressjs.com
 const app = express()
+//open website on: heroku website or localhost:3000
+const port = process.env.PORT || 3000
 
 //Define path for Express config:
 const publicDir = path.join(__dirname, "../public")
@@ -100,7 +102,8 @@ app.get("*", (req, res) => {
     })
 })
 
-//listen to a specific port:
-app.listen(3000, () => {
-    console.log("Server is up on port 3000!")
+//listen to a specific port on local host or heroku:
+app.listen(port, () => {
+    console.log("Server is up on port " + port)
 })
+
